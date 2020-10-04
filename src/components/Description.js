@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import iphone from '../img/i.png';
+import iphone from '../img/iphone.png';
 import { HeaderText, RegularText } from './TextStyles';
 import { AiOutlineCamera, AiOutlineEye, AiOutlinePicture } from 'react-icons/ai';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
