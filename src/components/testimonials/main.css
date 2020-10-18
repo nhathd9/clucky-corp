@@ -1,0 +1,21 @@
+@keyframes fadeOut {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+.inactive {
+    display: none;
+  }
+  .active {
+    display: block;
+    min-height: 321px;
+  }
+
+  .left > * {
+      animation: translateXToRight 1000ms ease-out forwards; 
+  }
+  
+  .right > * {
+    animation: translateXToLeft 1000ms ease-out forwards;
+
+  }

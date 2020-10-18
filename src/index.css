@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'open_light';
+  src: url('./fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
   font-family: 'open_regular';
   src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;

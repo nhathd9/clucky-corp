@@ -2,10 +2,8 @@ import React from 'react';
 import logo from '../../img/logo.png';
 import styled from 'styled-components'; 
 import DropDown from './DropDown';
+import Navigation from './Navigation';
 import SocialLinks from './SocialLinks';
-
-
-const navContent = ['About', 'Support', 'News'];
 
 class Header extends React.Component {
   constructor(){
@@ -35,15 +33,7 @@ class Header extends React.Component {
                 <HomeLink href='#'>
                   <img src={logo} alt='Clucky Corp'/>
                 </HomeLink>
-                  <Nav>
-                    {
-                      navContent.map(content => (
-                        <a href='#'>
-                            {content}
-                        </a>
-                      ))
-                    }
-                  </Nav>
+                  <Navigation />
                   <SocialLinks />
             </Container>
           </HeaderGradient>
@@ -107,32 +97,12 @@ const Container = styled.div`
   margin-right: 18%;
 `
 
-const Nav = styled.div`
-  a {
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: 40px;
-    color: #ffffff;
-  }
-  a:hover,
-  a:focus{
-	text-decoration: none;
-  color: #85caff;
-  transition: color 0.5s;
-}
-  margin-top: 43px;
-  margin-left: 40px;
-  margin-right: 40px;
-  display: flex;
-  width: 490px;
-
-`
-
 const HomeLink = styled.a`
 margin-top: 5px;
 @media (max-width: 1069px) {
   margin-top: 25px;
 }
+animation: translateXToRight 1300ms ease-out forwards; 
   transition: transform 0.5s;
   &:hover { 
     transform: scale(0.95); 

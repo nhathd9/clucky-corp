@@ -1,16 +1,40 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link, Container } from '../../reusable-components/Containers';
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
 
-const socials = [ <FaInstagram size={25}/>, <FaFacebookF size={23}/>, <FaTwitter size={23}/>]
+
+const socials = [
+  {
+    icon: <FaInstagram size={25}/>,
+    animation: 'translateXToLeft 500ms ease-out forwards'
+  }, 
+  {
+    icon: <FaFacebookF size={23}/>,
+    animation: 'translateXToLeft 700ms ease-out forwards'
+  }, 
+  {
+    icon: <FaTwitter size={23}/>,
+    animation: 'translateXToLeft 1000ms ease-out forwards'
+  }
+];
 
 const SocialLinks = () => {
     return(
-    <SocialsContainer>
+    <SocialsContainer 
+      flexDirection='row'
+      margin='38px 0 0 auto'
+    >
     {
         socials.map(social => (
-        <WhiteCircle>
-            {social}
+        <WhiteCircle 
+          href='#'
+          animation={social.animation}
+          justifyContent='center'
+          width='40px'
+          height='40px'
+        >
+            {social.icon}
         </WhiteCircle>
         ))
     }
@@ -18,34 +42,21 @@ const SocialLinks = () => {
     );
 }
 
-const SocialsContainer = styled.div`
+const SocialsContainer = styled(Container)`
 & > * {
   margin-left: 20px;
 }
-display: flex;
-flex-direction: row;
-margin-top: 38px;
-margin-left: auto;
 
 `
 
-const WhiteCircle = styled.div`
+const WhiteCircle = styled(Link)`
 & > * {
   color: #2a45e2;
   margin-top: 7px;
 }
-display: flex;
-justify-content: center;
   background-color: #ffffff;
-  max-width: 40px;
-  width: 40px;
-  height: 40px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: transform 0.5s;
-  &:hover { 
-    transform: scale(0.95); 
-  }
-  `
+`
 
 export default SocialLinks;

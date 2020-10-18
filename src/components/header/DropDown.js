@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const navContent = ['About', 'Support', 'News'];
+
 
 const DropDown = () => {
     return(
@@ -9,8 +11,8 @@ const DropDown = () => {
         <DropButton>MENU</DropButton>
         <DropDownContent>
         {
-          navContent.map((link, i) => (
-            <a href='#'>{link}</a>
+          navContent.map((link) => (
+            <DropDownLink href='#'>{link}</DropDownLink>
           ))
         }
         </DropDownContent>
@@ -55,19 +57,21 @@ const DropDownContent = styled.button`
   left: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border: none;
-  a {
-    font-family: open_semibold;
-    color: #2a45e2;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  a:hover {
-    background-color: #f1f1f1;
-    transition: background-color 0.5s;
-  }
-  animation: translateX 400ms ease-in-out forwards;
+  outline: none;
+  animation: translateXToLeft 400ms ease-in-out forwards;
   transform-origin: top center;
+`
+
+const DropDownLink = styled.a`
+  font-family: open_semibold;
+  color: #2a45e2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  &:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.5s;
+}
 `
 
 export default DropDown;
