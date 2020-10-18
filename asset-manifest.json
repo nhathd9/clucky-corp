@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/clucky-corp/static/css/main.155ef317.chunk.css",
-    "main.js": "/clucky-corp/static/js/main.a2d24f12.chunk.js",
-    "main.js.map": "/clucky-corp/static/js/main.a2d24f12.chunk.js.map",
+    "main.css": "/clucky-corp/static/css/main.6f529e85.chunk.css",
+    "main.js": "/clucky-corp/static/js/main.94f71842.chunk.js",
+    "main.js.map": "/clucky-corp/static/js/main.94f71842.chunk.js.map",
     "runtime-main.js": "/clucky-corp/static/js/runtime-main.8833d8b8.js",
     "runtime-main.js.map": "/clucky-corp/static/js/runtime-main.8833d8b8.js.map",
-    "static/js/2.fc0174f8.chunk.js": "/clucky-corp/static/js/2.fc0174f8.chunk.js",
-    "static/js/2.fc0174f8.chunk.js.map": "/clucky-corp/static/js/2.fc0174f8.chunk.js.map",
+    "static/js/2.283c3403.chunk.js": "/clucky-corp/static/js/2.283c3403.chunk.js",
+    "static/js/2.283c3403.chunk.js.map": "/clucky-corp/static/js/2.283c3403.chunk.js.map",
     "index.html": "/clucky-corp/index.html",
-    "precache-manifest.6819ac117f4c0b802eaea8ae3304cc79.js": "/clucky-corp/precache-manifest.6819ac117f4c0b802eaea8ae3304cc79.js",
+    "precache-manifest.e1afe9a2bfd8a96b536090468b86f97b.js": "/clucky-corp/precache-manifest.e1afe9a2bfd8a96b536090468b86f97b.js",
     "service-worker.js": "/clucky-corp/service-worker.js",
-    "static/css/main.155ef317.chunk.css.map": "/clucky-corp/static/css/main.155ef317.chunk.css.map",
-    "static/js/2.fc0174f8.chunk.js.LICENSE.txt": "/clucky-corp/static/js/2.fc0174f8.chunk.js.LICENSE.txt",
+    "static/css/main.6f529e85.chunk.css.map": "/clucky-corp/static/css/main.6f529e85.chunk.css.map",
+    "static/js/2.283c3403.chunk.js.LICENSE.txt": "/clucky-corp/static/js/2.283c3403.chunk.js.LICENSE.txt",
     "static/media/index.css": "/clucky-corp/static/media/OpenSans-SemiBold.ba5cde21.ttf",
     "static/media/hero.jpg": "/clucky-corp/static/media/hero.ead8a118.jpg",
-    "static/media/iphone.png": "/clucky-corp/static/media/iphone.2a9f9955.png"
+    "static/media/iphone.png": "/clucky-corp/static/media/iphone.2a9f9955.png",
+    "static/media/loading.gif": "/clucky-corp/static/media/loading.7c5b9558.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.8833d8b8.js",
-    "static/js/2.fc0174f8.chunk.js",
-    "static/css/main.155ef317.chunk.css",
-    "static/js/main.a2d24f12.chunk.js"
+    "static/js/2.283c3403.chunk.js",
+    "static/css/main.6f529e85.chunk.css",
+    "static/js/main.94f71842.chunk.js"
   ]
 }

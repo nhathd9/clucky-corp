@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45362afb423eb4aad8f7bc8363761016",
+    "revision": "892d6574f0eed7f9bc6700a27d677edc",
     "url": "/clucky-corp/index.html"
   },
   {
-    "revision": "541a30322fbfd80605e7",
-    "url": "/clucky-corp/static/css/main.155ef317.chunk.css"
+    "revision": "d3b8669e025502411665",
+    "url": "/clucky-corp/static/css/main.6f529e85.chunk.css"
   },
   {
-    "revision": "8c1ce781bb176bf18b59",
-    "url": "/clucky-corp/static/js/2.fc0174f8.chunk.js"
+    "revision": "8e8335cd3a68291fe5c1",
+    "url": "/clucky-corp/static/js/2.283c3403.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/clucky-corp/static/js/2.fc0174f8.chunk.js.LICENSE.txt"
+    "url": "/clucky-corp/static/js/2.283c3403.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "541a30322fbfd80605e7",
-    "url": "/clucky-corp/static/js/main.a2d24f12.chunk.js"
+    "revision": "d3b8669e025502411665",
+    "url": "/clucky-corp/static/js/main.94f71842.chunk.js"
   },
   {
     "revision": "e5cb563f51df3dedc57d",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1025a6e0fb0fa86f17f57cc82a6b9756",
     "url": "/clucky-corp/static/media/OpenSans-Bold.1025a6e0.ttf"
+  },
+  {
+    "revision": "2d0bdc8df10dee036ca3bedf6f3647c6",
+    "url": "/clucky-corp/static/media/OpenSans-Light.2d0bdc8d.ttf"
   },
   {
     "revision": "3ed9575dcc488c3e3a5bd66620bdf5a4",
@@ -42,5 +46,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2a9f9955a006982c9e35df099868a870",
     "url": "/clucky-corp/static/media/iphone.2a9f9955.png"
+  },
+  {
+    "revision": "7c5b9558e3c9a8a9f3d91e9cc9eb3d10",
+    "url": "/clucky-corp/static/media/loading.7c5b9558.gif"
   }
 ]);
