@@ -1,33 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../img/logo.png';
 import styled from 'styled-components'; 
 import DropDown from './DropDown';
 import Navigation from './Navigation';
 import SocialLinks from './SocialLinks';
 
-class Header extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      width: null,
-      screenWidthSmall: null
+const Header = () => {
+  const [ width, setWidth ] = useState(window.innerWidth)
+  const [ screenWidthSmall, setScreenWidthSmall ] = useState(null)
+  const onScreenChange = () => {
+    if (width < 1070) {
+      setScreenWidthSmall(true)
+    } else if (width >= 1070) {
+      setScreenWidthSmall(false)
     }
   }
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+    onScreenChange();
+  };
 
-  onScreenChange = () => {
-    if (this.state.width < 1070) {
-      this.setState({screenWidthSmall: true})
-    } else if (this.state.width >= 1070) {
-      this.setState({screenWidthSmall: false})
+  useEffect(() => {
+
+    window.addEventListener('resize', updateDimensions);
+    window.addEventListener('load', updateDimensions);
+
+    return () => {
+      window.removeEventListener('resize', updateDimensions);
+      window.removeEventListener('load', updateDimensions);
     }
-  }
 
+  })
 
-    render(){
       return(
       <>
       <HeaderSolid>
-      { this.state.screenWidthSmall === false
+      { screenWidthSmall === false
         ? <HeaderGradient>
             <Container>
                 <HomeLink href='#'>
@@ -56,19 +64,6 @@ class Header extends React.Component {
       );
     };
 
-    updateDimensions = () => {
-      this.setState({ width: window.innerWidth });
-      this.onScreenChange();
-    };
-    componentDidMount() {
-      window.addEventListener('resize', this.updateDimensions);
-      window.addEventListener('load', this.updateDimensions);
-    }
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.updateDimensions);
-      window.removeEventListener('load', this.updateDimensions);
-    }
-}
 
 const HeaderGradient = styled.div`
     width: 100%;

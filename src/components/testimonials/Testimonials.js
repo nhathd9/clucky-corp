@@ -1,44 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Slide from './Slide';
-import landingData from './Landing';
+import landingData from './landing';
 import styled from 'styled-components';
 import { Container } from '../../reusable-components/Containers';
 import { FiArrowRightCircle, FiArrowLeftCircle } from 'react-icons/fi'
 import './main.css';
 
-class Testimonials extends React.Component {
-    constructor(props) {
-        super(props);
+const Testimonials = () => {
 
-        this.state = {
-            activeIndex: 0,
-            direction: 'left',
-            length: landingData.length
-          };
-        }
+        const [ activeIndex, setActiveIndex ] = useState(0);
+        const [ direction, setDirection ] = useState('left');
+        const [ length ] = useState(landingData.length);
 
-        goToPrevSlide = () => {
-        let { activeIndex, length } = this.state;
+        const goToPrevSlide = () => {
+          let index = activeIndex
         if(activeIndex < 1) {
-          activeIndex = length - 1;
+          index = length - 1;
             }
             else {
-              activeIndex--;
+              index--;
             }
-        this.setState({activeIndex, direction: 'left'});
+            setActiveIndex(index);
+            setDirection('left');
           }
-        goToNextSlide = () => {
-        let { activeIndex, length } = this.state;
+        const goToNextSlide = () => {
+          let index = activeIndex
         if(activeIndex === length - 1) {
-          activeIndex = 0
+          index = 0
               }
               else {
-                activeIndex++;
+                index++;
               }
-        this.setState({activeIndex, direction: 'right'});
+              setActiveIndex(index);
+              setDirection('right');
           }
-
-          render() {
             return (
               <Container
                 padding='100px 0 70px 0'
@@ -48,26 +43,26 @@ class Testimonials extends React.Component {
                   justifyContent='center'
                 >
                     <Slide
-                      activeIndex={this.state.activeIndex}
-                      direction={this.state.direction}
+                      activeIndex={activeIndex}
+                      direction={direction}
                     />
                   </Container>
                   <ArrowContainer
                     justifyContent='center'
                   >
                     <FiArrowLeftCircle
-                       onClick={this.goToPrevSlide}
+                       onClick={goToPrevSlide}
                        size={40}
                     />
                     <FiArrowRightCircle
-                      onClick={this.goToNextSlide}
+                      onClick={goToNextSlide}
                       size={40}
                     />
                   </ArrowContainer>
               </Container>
             );
-          }
     }
+    
  
     const ArrowContainer = styled(Container)`
     color: #6d6c6c;

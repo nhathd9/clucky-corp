@@ -1,17 +1,11 @@
 import React from 'react';
-import landingData from './Landing';
+import landingData from './landing';
 import styled from 'styled-components';
 import { Container } from '../../reusable-components/Containers';
 import { RegularText, LightText } from '../../reusable-components/TextStyles';
 import './main.css';
 
-class Slide extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {landing: landingData};
-    }
-  render() {
-      let { direction, activeIndex } = this.props
+const Slide = ({activeIndex, direction}) => {
       return(
         <SlideSection 
         width='100%'
@@ -22,7 +16,7 @@ class Slide extends React.Component {
         }
           >
         {
-          this.state.landing.map((s, index) =>
+          landingData.map((s, index) => 
             <div 
             className={
               index === activeIndex ? 'active' : 'inactive'
@@ -43,7 +37,6 @@ class Slide extends React.Component {
       )
     }
     
-  }
 
 const SlideSection = styled(Container)`
   @media (max-width: 759px) {

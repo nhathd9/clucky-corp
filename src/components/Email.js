@@ -1,29 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import { RegularText } from '../reusable-components/TextStyles';
 import { Container } from '../reusable-components/Containers';
 import { FiMail, FiCheck } from 'react-icons/fi';
 import loading from '../img/loading.gif';
 
-class Email extends React.Component {
-    constructor(){
-        super();
-        this.state = {
-            buttonLoad: null
-        }
-    }
+const Email = () => {
 
-onButtonSubmit = () => {
-    this.setState({buttonLoad: 'loading'});
-    setTimeout(this.onEmailRecieved, 3000);
+const [ buttonLoad, setButtonLoad ] = useState(null)
+
+const onButtonSubmit = () => {
+    setButtonLoad('loading');
+    setTimeout(onEmailRecieved, 3000);
 }
 
-onEmailRecieved = () => {
-    this.setState({buttonLoad: 'success'});
+const onEmailRecieved = () => {
+    setButtonLoad('success');
 }
 
-render() {
-    let { buttonLoad } = this.state;
     return(
         <EmailSection 
             padding='60px'
@@ -43,7 +37,7 @@ render() {
                 </RegularText>
                 <EmailContent justifyContent='center'>
                     <EnterEmail type='text' placeholder='Enter your email' />
-                    <SubmitEmail onClick={this.onButtonSubmit}>
+                    <SubmitEmail onClick={onButtonSubmit}>
                         {
                             buttonLoad === null 
                             ? <FiMail size={18}/>
@@ -58,8 +52,8 @@ render() {
             </EmailContent>
         </EmailSection>
         );
-    }
 }
+
 
 const EmailSection = styled(Container)`
     background-image: linear-gradient(#00b0ff, #0030ff);
