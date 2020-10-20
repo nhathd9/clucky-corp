@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "042a4d2940e137819ce4f47e4253d3f1",
+    "revision": "fd09a70e62c51a3abe24324d5896195e",
     "url": "/clucky-corp/index.html"
   },
   {
-    "revision": "d3b8669e025502411665",
-    "url": "/clucky-corp/static/css/main.6f529e85.chunk.css"
+    "revision": "eeccc633031a5f5deab3",
+    "url": "/clucky-corp/static/css/main.dd2bb53c.chunk.css"
   },
   {
-    "revision": "8e8335cd3a68291fe5c1",
-    "url": "/clucky-corp/static/js/2.283c3403.chunk.js"
+    "revision": "8565da9ea6e789c2c367",
+    "url": "/clucky-corp/static/js/2.d2111713.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/clucky-corp/static/js/2.283c3403.chunk.js.LICENSE.txt"
+    "url": "/clucky-corp/static/js/2.d2111713.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d3b8669e025502411665",
-    "url": "/clucky-corp/static/js/main.94f71842.chunk.js"
+    "revision": "eeccc633031a5f5deab3",
+    "url": "/clucky-corp/static/js/main.61f0e03c.chunk.js"
   },
   {
     "revision": "e5cb563f51df3dedc57d",
