@@ -35,7 +35,8 @@ const DropDownContainer = styled.div`
   }
 `
 
-const DropButton = styled.button`
+const DropButton = styled.div`
+  display: none;
   background-color: #ffffff;
   color: #2a45e2;
   padding: 11px;
@@ -45,6 +46,9 @@ const DropButton = styled.button`
   &:hover  {
     background-color: #ffffff;
     text-decoration: none;
+  }
+  @media (max-width: 1069px) {
+    display: block;
   }
     `
 

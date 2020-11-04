@@ -43,6 +43,10 @@ const SocialLinks = () => {
 }
 
 const SocialsContainer = styled(Container)`
+display: none;
+@media (min-width: 1070px) {
+  display: flex;
+}
 & > * {
   margin-left: 20px;
 }

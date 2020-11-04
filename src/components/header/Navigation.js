@@ -22,11 +22,11 @@ const Navigation = () => {
             <Nav>
             {
                 navContent.map(content => (
-                <Link href='#'
+                <NavLinks href='#'
                     animation={content.animation}
                 >
                     {content.word}
-                </Link>
+                </NavLinks>
                 ))
             }
             </Nav>
@@ -34,25 +34,28 @@ const Navigation = () => {
 }
 
 const Nav = styled.div`
-  a {
-    text-decoration: none;
-    font-size: 16px;
-    margin-left: 40px;
-    color: #ffffff;
-    transition: color 0.5s;
-  }
-  a:hover,
-  a:focus{
-	text-decoration: none;
-  color: #85caff;
-  transition: color 0.5s;
-}
   margin-top: 43px;
   margin-left: 40px;
   margin-right: 40px;
   display: flex;
   width: 490px;
-
 `
 
+const NavLinks = styled(Link)`
+  display: none;
+  @media (min-width: 1070px) {
+    display: block;
+  }
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 40px;
+  color: #ffffff;
+  transition: color 0.5s;
+  &:hover,
+  &:focus{
+  text-decoration: none;
+  color: #85caff;
+  transition: color 0.5s;
+
+`
 export default Navigation;

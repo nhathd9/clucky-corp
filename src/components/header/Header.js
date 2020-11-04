@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import logo from '../../img/logo.png';
 import styled from 'styled-components'; 
 import DropDown from './DropDown';
@@ -6,37 +6,10 @@ import Navigation from './Navigation';
 import SocialLinks from './SocialLinks';
 
 const Header = () => {
-  const [ width, setWidth ] = useState(window.innerWidth)
-  const [ screenWidthSmall, setScreenWidthSmall ] = useState(null)
-  const onScreenChange = () => {
-    if (width < 1070) {
-      setScreenWidthSmall(true)
-    } else if (width >= 1070) {
-      setScreenWidthSmall(false)
-    }
-  }
-  const updateDimensions = () => {
-    setWidth(window.innerWidth);
-    onScreenChange();
-  };
-
-  useEffect(() => {
-
-    window.addEventListener('resize', updateDimensions);
-    window.addEventListener('load', updateDimensions);
-
-    return () => {
-      window.removeEventListener('resize', updateDimensions);
-      window.removeEventListener('load', updateDimensions);
-    }
-
-  })
-
       return(
       <>
       <HeaderSolid>
-      { screenWidthSmall === false
-        ? <HeaderGradient>
+          <HeaderGradient>
             <Container>
                 <HomeLink href='#'>
                   <img src={logo} alt='Clucky Corp'/>
@@ -45,20 +18,7 @@ const Header = () => {
                   <SocialLinks />
             </Container>
           </HeaderGradient>
-        : (
-          <>
-            <HeaderGradient>
-            <Container>
-                <HomeLink href='#'>
-                  <img src={logo} alt='Clucky Corp'/>
-                </HomeLink>
-              </Container>
-            </HeaderGradient>
-            <DropDown />
-            
-          </>
-          )       
-        }
+          <DropDown />
       </HeaderSolid>
       </>
       );
