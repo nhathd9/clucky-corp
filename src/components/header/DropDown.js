@@ -29,6 +29,9 @@ const DropDownContainer = styled.div`
   @media (max-width: 750px) {
     left: 75%;
   }
+  @media (max-width: 300px) {
+    left: 70%;
+  }
   display: inline-block;
   &:hover * {
     display: block;
@@ -50,6 +53,7 @@ const DropButton = styled.div`
   @media (max-width: 1069px) {
     display: block;
   }
+
     `
 
 const DropDownContent = styled.button`

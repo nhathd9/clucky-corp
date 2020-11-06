@@ -47,6 +47,8 @@ const HeroBackground = styled(Container)`
     @media (max-width: 689px) {
         display: flex;
         justify-content: center;
+        min-height: 560px;
+        height: 60%;
     }
 `
 

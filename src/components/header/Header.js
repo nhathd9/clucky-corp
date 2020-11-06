@@ -57,6 +57,11 @@ margin-top: 5px;
 @media (max-width: 1069px) {
   margin-top: 25px;
 }
+@media (max-width: 300px) {
+  *{
+    width: 150px;
+  }
+}
 animation: translateXToRight 1300ms ease-out forwards; 
   transition: transform 0.5s;
   &:hover { 
