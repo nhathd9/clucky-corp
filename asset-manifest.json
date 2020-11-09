@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/clucky-corp/static/css/main.dd2bb53c.chunk.css",
-    "main.js": "/clucky-corp/static/js/main.423fbdf7.chunk.js",
-    "main.js.map": "/clucky-corp/static/js/main.423fbdf7.chunk.js.map",
+    "main.js": "/clucky-corp/static/js/main.7c6be493.chunk.js",
+    "main.js.map": "/clucky-corp/static/js/main.7c6be493.chunk.js.map",
     "runtime-main.js": "/clucky-corp/static/js/runtime-main.8833d8b8.js",
     "runtime-main.js.map": "/clucky-corp/static/js/runtime-main.8833d8b8.js.map",
     "static/js/2.08c5c288.chunk.js": "/clucky-corp/static/js/2.08c5c288.chunk.js",
     "static/js/2.08c5c288.chunk.js.map": "/clucky-corp/static/js/2.08c5c288.chunk.js.map",
     "index.html": "/clucky-corp/index.html",
-    "precache-manifest.1b8b9bee6b5b9477a9ded9951795f278.js": "/clucky-corp/precache-manifest.1b8b9bee6b5b9477a9ded9951795f278.js",
+    "precache-manifest.2c7cd90cb57b049f61c43bc26e8f7884.js": "/clucky-corp/precache-manifest.2c7cd90cb57b049f61c43bc26e8f7884.js",
     "service-worker.js": "/clucky-corp/service-worker.js",
     "static/css/main.dd2bb53c.chunk.css.map": "/clucky-corp/static/css/main.dd2bb53c.chunk.css.map",
     "static/js/2.08c5c288.chunk.js.LICENSE.txt": "/clucky-corp/static/js/2.08c5c288.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.8833d8b8.js",
     "static/js/2.08c5c288.chunk.js",
     "static/css/main.dd2bb53c.chunk.css",
-    "static/js/main.423fbdf7.chunk.js"
+    "static/js/main.7c6be493.chunk.js"
   ]
 }
