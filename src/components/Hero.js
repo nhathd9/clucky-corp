@@ -16,7 +16,7 @@ const Hero = () => {
             <HeroContent
                 width='512px'
                 flexDirection='column'
-                padding='127px 0 0 0'
+                padding='127px 0 127px 0'
                 animation='translateXToRight 1000ms ease-out forwards'
             >
                 <HeaderText>CREATORS OF ROBOFRIENDS AND SMARTBRAIN</HeaderText>
