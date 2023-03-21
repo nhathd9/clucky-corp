@@ -1,26 +1,20 @@
 {
   "files": {
-    "main.css": "/clucky-corp/static/css/main.dd2bb53c.chunk.css",
-    "main.js": "/clucky-corp/static/js/main.7c6be493.chunk.js",
-    "main.js.map": "/clucky-corp/static/js/main.7c6be493.chunk.js.map",
-    "runtime-main.js": "/clucky-corp/static/js/runtime-main.8833d8b8.js",
-    "runtime-main.js.map": "/clucky-corp/static/js/runtime-main.8833d8b8.js.map",
-    "static/js/2.08c5c288.chunk.js": "/clucky-corp/static/js/2.08c5c288.chunk.js",
-    "static/js/2.08c5c288.chunk.js.map": "/clucky-corp/static/js/2.08c5c288.chunk.js.map",
+    "main.css": "/clucky-corp/static/css/main.463527c6.css",
+    "main.js": "/clucky-corp/static/js/main.921335f6.js",
+    "static/media/hero.jpg": "/clucky-corp/static/media/hero.e145bd0f2062df98b165.jpg",
+    "static/media/iphone.png": "/clucky-corp/static/media/iphone.1e28ec7090565e898f27.png",
+    "static/media/OpenSans-Bold.ttf": "/clucky-corp/static/media/OpenSans-Bold.dbb97fd982ce1b96b6de.ttf",
+    "static/media/OpenSans-Light.ttf": "/clucky-corp/static/media/OpenSans-Light.ed41bedf131bc097372a.ttf",
+    "static/media/OpenSans-SemiBold.ttf": "/clucky-corp/static/media/OpenSans-SemiBold.a16d8201b06a03c6c365.ttf",
+    "static/media/OpenSans-Regular.ttf": "/clucky-corp/static/media/OpenSans-Regular.1b0809d519837cb7aad3.ttf",
+    "static/media/loading.gif": "/clucky-corp/static/media/loading.fff8555104271fdba016.gif",
     "index.html": "/clucky-corp/index.html",
-    "precache-manifest.2c7cd90cb57b049f61c43bc26e8f7884.js": "/clucky-corp/precache-manifest.2c7cd90cb57b049f61c43bc26e8f7884.js",
-    "service-worker.js": "/clucky-corp/service-worker.js",
-    "static/css/main.dd2bb53c.chunk.css.map": "/clucky-corp/static/css/main.dd2bb53c.chunk.css.map",
-    "static/js/2.08c5c288.chunk.js.LICENSE.txt": "/clucky-corp/static/js/2.08c5c288.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/clucky-corp/static/media/OpenSans-SemiBold.ba5cde21.ttf",
-    "static/media/hero.jpg": "/clucky-corp/static/media/hero.ead8a118.jpg",
-    "static/media/iphone.png": "/clucky-corp/static/media/iphone.2a9f9955.png",
-    "static/media/loading.gif": "/clucky-corp/static/media/loading.7c5b9558.gif"
+    "main.463527c6.css.map": "/clucky-corp/static/css/main.463527c6.css.map",
+    "main.921335f6.js.map": "/clucky-corp/static/js/main.921335f6.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8833d8b8.js",
-    "static/js/2.08c5c288.chunk.js",
-    "static/css/main.dd2bb53c.chunk.css",
-    "static/js/main.7c6be493.chunk.js"
+    "static/css/main.463527c6.css",
+    "static/js/main.921335f6.js"
   ]
 }
